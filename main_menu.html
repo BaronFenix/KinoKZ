@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="img/jpg" href="img\\fenix.jpg">
+    <title>Kinoshki</title>
+</head>
+    <header>
+        <div class="logo">
+            <a href="main_menu.html"><img src="img/header-logo.png" width="150" height="45"></a>
+        </div>
+        	<ul class="menu">
+		<li>
+            <div class="menuItem">
+            <img src="img/star_icon.png">
+            <a id="linkstyle" href="rating.html">Рейтинг</a>
+            </div>
+        </li>
+        <li>
+            <div class="menuItem">
+            <img src="img/double_icon.png">
+            <a id="linkstyle" href="all_films.html">Все фильмы</a>
+            </div>
+        </li>
+		<li>
+            <div class="menuItem">
+            <img src="img/filmline_icon.png">
+            <a id="linkstyle" href="premiers.html">Премьеры</a>
+            </div>
+        </li>
+	</ul>
+    </header>
+<body>
+    <hr id="line" noshade="noshade" color="white">
+    <section class="slideshow">
+        <div class="slideBlock slide">
+            <img src="img/gentleman.jpg">
+            <img src="img/The-Nun-Desktop-Wallpaper.jpg">
+            <img src="img/chudo-zhenshchina-1984-oboi-3840x2160-42032_54.jpg">
+            <img src="img/black_panther.jpg">
+            <img src="img/star_wars_9.jpg">
+            <img src="img/t.jpg">
+            <img src="img/alita_battle_angel.jpg">
+        </div>
+    </section>
+
+    <div class="main_content">
+        <h2>Сегодня в кино</h2>
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/nun.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Проклятие монахини роуз <span id="date">/ с 7 января</span></h4>
+                <p id="info_txt">Ужасы, Триллер, Драма</p>
+                <p id="info_txt">После окончания Первой мировой войны молодую девушку, всю семью которой жестоко убил её же отец, отправляют в монастырь. Проходит время, девушка растет и осознает, что демоны, которые свели с ума её отца, последовали в монастырь следом за ней.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button"><a href="curse_of_nun2.0.html">Подробнее</a></button>
+            </div>
+        </div>
+        <hr id="line" noshade="noshade" color="white">
+
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/WW.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Чудо-женщина: 1984 <span id="date">/ с 7 января</span></h4>
+                <p id="info_txt">фэнтези, боевик, приключения</p>
+                <p id="info_txt">Влиятельный и успешный бизнесмен Лорд мечтает стать богом среди смертных. Для этого он не жалеет средств и собирает со всех уголков света разнообразные магические артефакты в попытке найти тот, который сможет подарить ему безграничную силу и могущество настоящего божества...</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button"><a href="wonder_woman_2.0.html">Подробнее</a></button>
+            </div>
+        </div>
+        <hr id="line" noshade="noshade" color="white">
+
+        <input type="checkbox" id="film1" class="hide">
+        <label for="film1">
+            <div class="checkbox_heder">
+                <h4>Мулан <span id="date">/ с 24 декабря</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/mulan.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Мулан <span id="date">/ с 24 декабря</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">драма, боевик, фэнтези</p>
+                <p id="info_txt">История о бесстрашной молодой девушке, которая выдаёт себя за мужчину, чтобы вступить в ряды армии, противостоящей Северным захватчикам, надвигающимся на Китай.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button">Подробнее</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="film2" class="hide">
+        <label for="film2">
+            <div class="checkbox_heder">
+                <h4>Алита: Боевой ангел <span id="date">/ с 24 декабря</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/alita.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Алита: Боевой ангел <span id="date">/ с 24 декабря</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">фантастика, боевик, триллер, мелодрама, приключения</p>
+                <p id="info_txt">Планета Земля, XXVI век. Доктор Идо в груде мусора находит девушку-киборга и восстанавливает ее. Вместе с телом к ней возвращаются ее боевые способности, но не память. Став охотником за головами, Алита начинает погоню не только за преступниками, но и за своими воспоминаниями.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button">Подробнее</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="film3" class="hide">
+        <label for="film3">
+            <div class="checkbox_heder">
+                <h4>Довод <span id="date">/ с 24 декабря</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/tenet.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Довод <span id="date">/ с 24 декабря</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">боевик, триллер, драма</p>
+                <p id="info_txt">После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой, чтобы противостоять русскому олигарху, который сколотил состояние на торговле оружием. Для этого агенты используют инверсию времени, заставляющую уже произошедшие события идти вспять.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button">Подробнее</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="film4" class="hide">
+        <label for="film4">
+            <div class="checkbox_heder">
+                <h4>Король лев <span id="date">/ с 18 июля</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="lion_king2.0.html">
+                <img src="img/lion_king.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Король лев <span id="date">/ с 18 июля</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">мультфильм, мюзикл, драма, приключения, семейный</p>
+                <p id="info_txt">Необыкновенные приключения львенка Симбы, наследника повелителя саванны Муфасы. Знакомые с детства герои взрослеют, влюбляются, познают себя и окружающий мир, совершают ошибки и делают правильный выбор.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button"><a href="lion_king2.0.html">Подробнее</a></button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="film5" class="hide">
+        <label for="film5">
+            <div class="checkbox_heder">
+                <h4>Ветреная река <span id="date">/ с 3 августа</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/wind-river06.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Ветреная река <span id="date">/ с 3 августа</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">боевик, триллер, криминал, детектив</p>
+                <p id="info_txt">В пустыне на территории индейской резервации «Ветреная река» егерь Кори Ламберт находит изувеченное тело молодой девушки. Опытный охотник с трагическим прошлым, он берется помочь в расследовании этого дела агенту ФБР Джейн Бэннер, которая оказывается в мире, полном загадок и насилия. Но смогут ли они противостоять зловещим силам этих мест, где сама природа пропитана горечью и жаждой мщения?..</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button">Подробнее</button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="film6" class="hide">
+        <label for="film6">
+            <div class="checkbox_heder">
+                <h4>Самый пьяный округ в мире <span id="date">/ с 4 декабря</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="lawless2.0.html">
+                <img src="img/lawless.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Самый пьяный округ в мире <span id="date">/ с 4 декабря</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">криминальный, драма</p>
+                <p id="info_txt">Основанный на реальной истории рассказ о банде самогонщиков, промышлявшей в неофициальной бутлегерской столице Америки Фрэнклин Каунти во времена сухого закона.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button"><a href="lawless2.0.html">Подробнее</a></button>
+            </div>
+        </div>
+
+
+        <input type="checkbox" id="film7" class="hide">
+        <label for="film7">
+            <div class="checkbox_heder">
+                <h4>Убийца <span id="date">/ с 26 ноября</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/sicario.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Убийца <span id="date">/ с 26 ноября</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">боевик, триллер, драма, криминал, детектив</p>
+                <p id="info_txt">На американо-мексиканской границе женщина-полицейский сопровождает двух рейнджеров, которые преследуют наркобарона. Она не подозревает, что по ту сторону границы есть тайное место, где не действуют никакие законы и царят насилие и разврат.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button">Подробнее</button>
+            </div>
+        </div>
+
+        <input type="checkbox" id="film8" class="hide">
+        <label for="film8">
+            <div class="checkbox_heder">
+                <h4>Логан <span id="date">/ с 2 марта</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+                <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="logan2.0.html">
+                <img src="img/logan.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Логан <span id="date">/ с 2 марта</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">фантастика, боевик, драма</p>
+                <p id="info_txt">Спустя много лет, постаревшему Логану предстоит вступить в бой против своего старого врага, угрожающего уничтожить его раз и навсегда. В этой жестокой и кровавой схватке, Росомахе предстоит спасти близких ему людей и одержать победу над заклятым противником. Но прошедшие годы не прошли для Логана без следа, и сейчас он уже не тот что прежде, и всё ведёт к тому, что жизнь длинной в столетие сведётся к трагическому завершению. Но не стоит забывать, что зверь, находящийся на закате своей жизни, будет сражаться ещё более яростно...</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button"><a href="logan2.0.html">Подробнее</a></button>
+            </div>
+        </div>
+
+        <input type="checkbox" id="film9" class="hide">
+        <label for="film9">
+            <div class="checkbox_heder">
+                <h4>Валериан и город тысячи планет <span id="date">/ с 23 октября</span></h4>
+                <img src="img/arrow_down.png" width="15px" height="15px">
+            </div>
+            <hr id="line" noshade="noshade" color="white">
+        </label>
+
+        <div class="film_block">
+            <a id="mini_poster" href="#">
+                <img src="img/valerian.jpg">
+            </a>
+            <div id="film_info">
+                <h4>Валериан и город тысячи планет <span id="date">/ с 23 октября</span><img src="" width="15px" height="15px"></h4>
+                <p id="info_txt">фантастика, боевик, приключения</p>
+                <p id="info_txt">2700 год, Валериан и Лорелин — космические спецагенты, которые по долгу службы впутались в подозрительное дело и стали невольными участниками то ли межгалактического заговора, то ли аферы самых причудливых обитателей планеты Альфа, где живут тысячи обитателей различных миров со всех уголков галактик.</p>
+                <button class="buy_button">Купить билет</button>
+                <button class="view_button">Подробнее</button>
+            </div>
+        </div>
+
+
+
+
+    </div> <!-- main content -->
+</body>
+
+
+<footer>
+         <!-- О ништяк футер из дз пригодился -->
+         <hr id="line" noshade="noshade" color="white">
+         <nav class="footerBlock">
+				
+				<ul class="m3nu">
+                    <li><b>Киноафиша Казахстана</b></li>
+					<li><a href="#">Сегодня в кино</a> | <a href="#">Детям</a> | <a href="#">Скоро</a></li>
+					<li><a href="#">IMAX</a></li>
+					<li><a href="#">Киноклуб О. Борецкого</a></li>
+					<li><a href="#">Кинособытия и новости кино</a></li>
+					<li><a href="#">Киноархив</a></li>
+					<li><a href="#">Рейтинг фильмов</a> | <a href="#">Топ 10 фильмов</a></li>
+                    <li><a href="#">Кинотеатры</a></li>
+                </ul>
+                <ul class="m3nu">
+                    <li><b>О Нас</b></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Мы на связи</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Покупка и возврат билетов</a></li>
+                </ul>
+                <ul class="m3nu">
+                    <li><b>Мобильные приложения</b></li>
+                    <li><a href="#">IOS</a></li>
+                    <li><a href="#">Android</a></li>
+				</ul>
+				
+				<div class="social">
+					<a href="#"><span id="FB"></span></a>
+					<a href="#"><span id="YT"></span></a>
+					<a href="#"><span id="INST"></span></a>
+				
+				</div>
+			</nav>
+     </footer>
+</html>

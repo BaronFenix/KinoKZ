@@ -1,0 +1,698 @@
+body{
+	background: linear-gradient(#f0d5b7, #f8bc6e);
+}
+/* ................MENU................... */
+header{
+	display: flex;
+	flex-direction: row;
+}
+.menu{
+	margin-left: 20%;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+.menu li{
+	/* display: inline-block; */
+	padding-left: 30px;
+	margin-top: 15px;
+	font-size: 16px;
+	height: 30px;
+	font-family: verdana;
+}
+.logo{
+	position: relative;
+	top: 10px;
+	left: 30px;
+}
+.menuItem img{
+	width: 15px;
+	height: 15px;
+}
+#linkstyle{
+	text-decoration: none;
+	color: #000;
+}
+#currentPage{
+	text-decoration: none;
+	color: #ff7b00;
+}
+#linkstyle:hover{
+	color: #ff7b00;
+	transition: ease 0.3s;
+}
+#line{
+	size: 3px;
+	opacity: 0.5;
+	margin: 20px 0;
+}
+/* ...............MAIN_MENU.HTML.................. */
+/* ................main_content.................. */
+.main_content{
+	width: 70%;
+	margin: 100px auto;
+}
+.film_block{
+	display: flex;
+	
+}
+#mini_poster{
+	padding-right: 30px;
+}
+#mini_poster img{
+	width: 160px;
+	height: 240px;
+	border-radius: 10px;
+}
+#date{
+	color: #797474dc;
+	font-size: 12px;
+}
+#info_txt{
+	font-family: verdana;
+	font-size: 14px	;
+	padding: 15px;
+	padding-left: 0px;
+}
+.buy_button{
+	background-color: #ff7b00;
+	color: #fff;
+	font-family: Verdana;
+	border: none;
+	border-radius: 30px;
+	width: 120px;
+	height: 30px;
+	outline-style: none;
+}
+.view_button{
+	background-color: #948e8edc;
+	color: #fff;
+	font-family: Verdana;
+	border: none;
+	border-radius: 30px;
+	width: 100px;
+	height: 30px;
+	margin-left: 30px;
+	outline-style: none;
+}
+.view_button a{
+	color: #fff;
+	text-decoration: none;
+}
+.view_button:hover{
+		background-color: #ff7b00;
+}
+/* ............hidden block.................... */
+.checkbox_heder {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	height: auto;
+}
+.hide:checked + label .checkbox_heder{
+	height: 35px;
+}
+/* скрытие дефолтных чекбоксов */
+.hide, .hide + label ~ div{
+	display: none;
+}
+.hide + label #line{
+	margin: 10px auto;
+}
+.hide:checked+label h4, 
+.hide:checked+label hr {
+	transition: all ease-out 0.9s;
+	display: none;	
+}
+/* .hide:not(:checked) + label img {
+	position: absolute;
+	right: 220px;
+	margin-top: -30px;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+.hide:checked+label img {
+	position: absolute;
+	right: 220px;
+	margin-top: 10px;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+.hide:checked + label img{
+	transform: rotate(180deg);
+} */
+.hide:not(:checked) + label img{
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+.hide:checked+label img{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+	transform: rotate(180deg);
+}
+.hide:checked + label + div {
+	animation-name: open;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+	display: flex;
+}
+@keyframes open {
+	0% {
+		display: flex;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	100% {
+		display: flex;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+
+/* ..............slidesnow.................. */
+
+.slideshow {
+	width: 625;
+	/* height: 400px; */
+	margin: 0 auto;
+	overflow: hidden;
+	/* border: 1px solid white; */
+}
+.slideBlock {
+	width: 5500px;
+	font-size: 0;
+	transition: 1s ease;
+	height: auto;
+	margin-top: 15px;
+}
+.slideBlock:hover {
+	animation-play-state: paused;
+}
+.slideBlock img {
+	width: 720px;
+	height: auto;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	/* padding-left: 30px; */
+}
+.slide {
+	/* animation: slide 24s ease infinite; */
+	animation: slide linear;
+	animation-duration: 24s;
+	animation-delay: 6s;
+	animation-iteration-count: infinite;
+}
+
+/* ..................animation................ */
+
+@keyframes slide {
+	0% {
+		transform: translateX(0%);
+	}
+
+	7.5% {
+		transform: translateX(0%);
+	}
+
+	12.5% {
+		transform: translateX(-10%);
+	}
+
+	15% {
+		transform: translateX(-10%);
+	}
+
+	25% {
+		transform: translateX(-10%);
+	}
+
+	30% {
+		transform: translateX(-25%);
+	}
+
+	40% {
+		transform: translateX(-25%);
+	}
+
+	45% {
+		transform: translateX(-25%);
+	}
+
+	55% {
+		transform: translateX(-35%);
+	}
+
+	65% {
+		transform: translateX(-35%);
+	}
+
+	75% {
+		transform: translateX(-35%);
+	}
+
+	80% {
+		transform: translateX(-55%);
+	}
+
+	85% {
+		transform: translateX(-55%);
+	}
+
+	90% {
+		transform: translateX(-55%);
+	}
+
+	92.5% {
+		transform: translateX(-60%);
+	}
+
+	95% {
+		transform: translateX(-60%);
+	}
+
+	97.5% {
+		transform: translateX(-60%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+/* ...................ALL_FILMS.HTML......................... */
+.orange_button{
+	background-color: #ff7b00;
+	color: #fff;
+	padding: 8px 12px;
+	border-radius: 30px;
+	font-size: 15px;
+	margin-left: 50px;
+}
+.all_films{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+.kinoCell{
+	position: relative;
+	width: 160px;
+}
+.kinoCell p{
+	margin-top: -20px;
+}
+.kinoCell h4{
+	margin-top: 0px;
+}
+.rating {
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	padding: 3px 6px;
+	border-radius: 10px;
+	background-color: rgb(122, 27, 102);
+	color: #FFF;
+	font-size: 11px;
+	font-family: tahoma;
+}
+.rating img {
+	width: 9px;
+	height: 9px;
+	padding-right: 5px;
+}
+
+/* .......................RATING PAGE......................... */
+.ratelist{
+	counter-reset: myCounter;
+}
+.ratelist li{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+
+	
+}
+.ratelist li::before{
+    counter-increment: myCounter;
+	content:counter(myCounter);
+	position: relative;
+	/* margin-top: 12%; */
+	top: 100px;
+	left: -60px;
+	font-size: 32px;
+	width: 60px;
+	height: 60px;
+	
+	/* margin-left: -15%; */
+}
+.favoriteBlock {
+	position: relative;
+}
+.rating_rate{
+	/* display: block; */
+	right: 5px;
+	top: 5px;
+	padding: 3px 9px;
+	border-radius: 10px;
+	background-color: #5acc60;
+	color: #FFF;
+	font-size: 11px;
+	font-family: tahoma;
+	box-shadow: rgb(65, 136, 65) -3px 3px 15px;
+}
+.rating_rate img {
+	width: 9px;
+	height: 9px;
+	padding-right: 5px;
+}
+.favorites{
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	width: 120px;
+
+	font-size: 14px;
+	text-align: right;
+}
+#f2{
+	top: 100px;
+}
+.favorites img{
+	position: relative;
+	top: 20px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+}
+/* ................Страницы конкретных фильмов.................. */
+/* .......................FILM PAGE......................... */
+
+#description{
+	width: 70%;
+	/* margin : 0 auto; */
+	font-family: cambria;
+	font-size: 15px;
+}
+#movie{
+	font-family: verdana;
+	font-size: 22px;
+}
+#grey_txt {
+	color: #797474dc;
+	font-size: 12px;
+	font-family: tahoma;
+	margin-top: -10px;
+}
+.trailer_and_info {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.about_movie{
+	/* width: 40%; */
+	/* display: block; */
+	margin-left: 30px;
+}
+.video_poster{
+	width: 70%;
+	display: block;
+	/* position: relative; */
+	/* left: 7%; */
+	/* width: 780px; */
+}
+.video_poster video {
+	object-fit: cover;
+	object-position: top;
+	border-radius: 20px;
+	outline: none;
+	margin-left: 7%;
+	width: 90%;
+	height: 70%;
+}
+.film_shot {
+	margin-left: 7%;
+	overflow:scroll;
+	width: 90%;
+	height: 180px;
+}
+.film_shot img {
+	width: 160px;
+	height: 90px;
+	border-radius: 10px;
+}
+.scroll_block {
+	width: 205%;
+}
+.movie_ratings{
+	/* width: 80%; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: start;
+}
+.movie_ratings div{
+	display: block;
+	/* width: 90px; */
+	margin-right: 30px;
+}
+.movie_ratings #feaute{
+	display: flex;
+	flex-direction: row;
+}
+.movie_ratings h3{
+	font-size: 32px;
+	font-family: impact;
+}
+.movie_ratings .favorites {
+	position:unset;
+	text-align: start;
+	margin-top: -30px;
+	/* margin-left: -20px; */
+}
+.movie_ratings .favorites img{
+	position: relative;
+	left: 12px;
+}
+
+.movie_description{
+	width: 420px;	
+	height: 350px;
+}
+#kinoKZRate, #IMDBRate, #KinoPoiskRate{
+	position: relative;
+	top: -25px;
+	font-family: impact;
+	text-decoration: none;
+}
+#kinoKZRate{
+	color: #ff7300;
+}
+#IMDBRate{
+	color: #4d99fd;
+}
+#KinoPoiskRate{
+	color: #f33832;
+}
+/* ля какая штука */
+/* толщина и наличие ползунков */
+.film_shot::-webkit-scrollbar {
+	height: 10px;
+	width: 0;
+}
+/* полоса ползунка */
+.film_shot::-webkit-scrollbar-track{
+	-webkit-box-shadow: 5px 5px 5px -5px #223c5033 inset;
+	background-color: #eca828;
+	border-radius: 10px;
+}
+/* сам ползунок */
+.film_shot::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: linear-gradient(90deg, #ff6601, #f8f40e);
+}
+/* ..........Рейтинг из звездочек (абсолютно честно скомунизденный).......... */
+.star-rating .rating_rate{
+	margin-left: 20px;
+	box-shadow: rgb(84, 133, 36) 1px 5px 25px;
+}
+.star-rating {
+	font-size: 0;
+}
+.star-rating__wrap {
+	display: inline-block;
+	font-size: 0.7rem;
+}
+.star-rating__wrap:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico {
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #ff7300;
+}
+.star-rating__ico:last-child {
+	padding-left: 0;
+}
+.star-rating__input {
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover~.star-rating__ico:before,
+.star-rating__input:checked~.star-rating__ico:before {
+	content: "\f005";
+}
+/* ....................блок под видео.......................... */
+
+.movieInfoBlock{
+	display: flex;
+	width: 100%;
+}
+.castBlock{
+	width: 40%;
+	display: inline-block;
+}
+#cast{
+	font-family: verdana;
+	display: inline-block;
+	list-style: none;
+	font-size: 14px;
+}
+#producerBlock{
+	width: 25%;
+}
+#production{
+	width: 30%;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+.recommended_films{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.recommended_films div{
+	text-align: center;
+	margin-left: 30px;
+}
+.recommended_films div img:hover {
+	/* width: 220px;
+	height: 320px; */
+	background-color: black;
+	opacity: 0.9;
+	transition: ease 0.5s;
+}
+
+/* ............tickets info...................... */
+
+.ticketsTable{
+	margin-top: 100px;
+}
+.ticketsTable tr{
+	text-align: center;
+	font-size: 18px;
+	font-family: verdana;
+}
+#buyButton{
+	display: block;
+	background: #948e8edc;
+	border-radius: 30px;
+	width: 110px;
+	height: 20px;
+	padding-top: 5px;
+	font-size: 12px;
+}
+#linkstyle span:hover{
+	color: #fff; 
+	background: #ff7b00;
+}
+
+/* ..................FOOOTER.................... */
+
+footer{
+	width: 100%;
+	height: 280px;
+	/* background-color: #324994; */
+}
+.footerBlock {
+	width: 80%;
+	/* height: 250px; */
+	margin: 0px auto;
+	display: flex;
+}
+.m3nu {
+	position: relative;
+	width: 80%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.m3nu li {
+	margin-top: 15px;
+	/* width: 100px; */
+	font-size: 11px;
+}
+.m3nu a {
+	font-family: Tahoma;
+	text-decoration: none;
+	color: #000;	
+}
+.m3nu a:hover {
+	color: #d36702;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	width: 30%;
+	height: 150px;
+	align-self: center;
+
+}
+.social span {
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+	background-position: center;
+	background-size: 100%;
+	display: inline-block;
+}
+
+#FB {
+	background-image: url("img/fb_gray.png");
+}
+#YT {
+	background-image: url("img/youtube_gray.png");
+}
+#INST {
+	background-image: url("img/insta_gray.png");
+}
+#FB:hover {
+	background-image: url("img/fb.png");
+}
+#YT:hover {
+	background-image: url("img/youtube.png");
+}
+#INST:hover {
+	background-image: url("img/insta.png");
+
+}
